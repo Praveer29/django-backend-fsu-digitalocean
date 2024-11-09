@@ -1,0 +1,1637 @@
+2024-10-24 19:59:11,770 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-24 23:24:56,516 - WARNING - Not Found: /
+2024-10-24 23:24:57,135 - WARNING - Not Found: /favicon.ico
+2024-10-24 23:26:47,500 - WARNING - Not Found: /
+2024-10-24 23:27:42,896 - ERROR - Internal Server Error: /auth/google/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\dj_rest_auth\views.py", line 48, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 33, in post
+    response = super().post(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\dj_rest_auth\views.py", line 125, in post
+    self.serializer.is_valid(raise_exception=True)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\serializers.py", line 445, in run_validation
+    value = self.validate(value)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\dj_rest_auth\registration\serializers.py", line 95, in validate
+    app = adapter.get_provider().app
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\allauth\socialaccount\providers\oauth2\views.py", line 47, in get_provider
+    return get_adapter(self.request).get_provider(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\allauth\socialaccount\adapter.py", line 214, in get_provider
+    app = self.get_app(request, provider=provider, client_id=client_id)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\allauth\socialaccount\adapter.py", line 304, in get_app
+    raise SocialApp.DoesNotExist()
+allauth.socialaccount.models.SocialApp.DoesNotExist
+2024-10-24 23:33:38,639 - WARNING - Bad Request: /api/summaries/
+2024-10-24 23:34:57,519 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-24 23:34:57,521 - ERROR - Internal Server Error: /api/summaries/
+2024-10-24 23:37:07,054 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-24 23:37:07,054 - ERROR - Internal Server Error: /api/summaries/
+2024-10-24 23:57:00,173 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-24 23:57:00,174 - ERROR - Internal Server Error: /api/summaries/
+2024-10-24 23:57:05,655 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-24 23:57:05,655 - ERROR - Internal Server Error: /api/summaries/
+2024-10-24 23:58:57,309 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-24 23:58:57,325 - ERROR - Internal Server Error: /api/summaries/
+2024-10-24 23:59:31,340 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-24 23:59:31,340 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 00:09:21,482 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\models.py changed, reloading.
+2024-10-25 00:11:35,201 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 00:12:10,459 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-25 00:12:10,460 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 00:13:10,525 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_transcript.py changed, reloading.
+2024-10-25 00:13:27,401 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-25 00:13:27,401 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 00:13:45,927 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_transcript.py changed, reloading.
+2024-10-25 00:14:12,936 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-25 00:14:12,938 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 00:14:28,804 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_transcript.py changed, reloading.
+2024-10-25 00:14:49,538 - ERROR - Error in GenerateYouTubeSummaryView: [Errno 2] No such file or directory: 'output/transcript.txt'
+2024-10-25 00:14:49,538 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 00:15:08,546 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_transcript.py changed, reloading.
+2024-10-25 00:15:53,839 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-25 00:15:53,839 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 00:17:05,890 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-25 00:17:05,891 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 00:17:15,277 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-25 00:17:15,277 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 00:17:57,580 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_transcript.py changed, reloading.
+2024-10-25 00:18:13,313 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-25 00:18:13,313 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 00:43:38,194 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_transcript.py changed, reloading.
+2024-10-25 00:44:41,488 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\video_details_fetch.py changed, reloading.
+2024-10-25 00:45:18,345 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\video_details_fetch.py changed, reloading.
+2024-10-25 00:46:47,380 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\major_topics.py changed, reloading.
+2024-10-25 00:47:05,637 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\major_topics.py changed, reloading.
+2024-10-25 00:48:50,894 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\major_topics.py changed, reloading.
+2024-10-25 00:49:38,766 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 00:50:25,589 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 00:51:16,936 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\views.py changed, reloading.
+2024-10-25 00:51:39,557 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 00:51:39,635 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 00:51:39,672 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 00:52:19,427 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-25 00:52:19,428 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 00:54:28,914 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-25 00:54:28,945 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 00:55:42,426 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-25 00:55:42,426 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 01:42:21,651 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 01:42:21,736 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 01:42:21,739 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 01:42:34,335 - ERROR - Error in GenerateYouTubeSummaryView: string indices must be integers
+2024-10-25 01:42:34,335 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 01:51:38,898 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\major_topics.py changed, reloading.
+2024-10-25 01:52:20,074 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_transcript.py changed, reloading.
+2024-10-25 01:52:45,168 - WARNING - Bad Request: /api/summaries/
+2024-10-25 01:53:21,853 - WARNING - Bad Request: /api/summaries/
+2024-10-25 01:53:29,447 - WARNING - Bad Request: /api/summaries/
+2024-10-25 01:55:47,455 - WARNING - Bad Request: /api/summaries/
+2024-10-25 01:58:13,764 - WARNING - Bad Request: /api/summaries/
+2024-10-25 02:00:20,536 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\views.py changed, reloading.
+2024-10-25 02:00:33,852 - WARNING - Bad Request: /api/summaries/
+2024-10-25 02:01:02,400 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\views.py changed, reloading.
+2024-10-25 02:01:37,883 - WARNING - Bad Request: /api/summaries/
+2024-10-25 02:02:59,996 - WARNING - Bad Request: /api/summaries/
+2024-10-25 02:04:55,414 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\views.py changed, reloading.
+2024-10-25 02:17:17,804 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\video_details_fetch.py changed, reloading.
+2024-10-25 02:24:54,127 - WARNING - Bad Request: /api/summaries/
+2024-10-25 02:24:57,207 - WARNING - Bad Request: /api/summaries/
+2024-10-25 02:26:08,970 - WARNING - Bad Request: /api/summaries/
+2024-10-25 02:29:16,077 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_transcript.py changed, reloading.
+2024-10-25 02:29:52,598 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\views.py changed, reloading.
+2024-10-25 02:30:09,046 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 02:30:11,435 - INFO - Starting video summary generation
+2024-10-25 02:30:11,686 - ERROR - File not found: backend\summaries\AI_workflow_files\output\major_topics.txt
+2024-10-25 02:30:11,686 - ERROR - Error in summary generation: [Errno 2] No such file or directory: 'backend\\summaries\\AI_workflow_files\\output\\major_topics.txt'
+2024-10-25 02:30:11,714 - ERROR - Error in GenerateYouTubeSummaryView: [Errno 2] No such file or directory: 'backend\\summaries\\AI_workflow_files\\output\\major_topics.txt'
+2024-10-25 02:30:11,714 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 02:32:22,393 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 02:32:37,418 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 02:32:38,214 - INFO - Starting video summary generation
+2024-10-25 02:32:38,730 - INFO - Timestamp token count: 540
+2024-10-25 02:32:38,730 - INFO - Description token count: 245
+2024-10-25 02:32:38,730 - INFO - Prompt token count: 995
+2024-10-25 02:32:43,454 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 02:32:43,527 - INFO - Summary generated successfully
+2024-10-25 02:32:43,529 - INFO - Summary saved to summary.json
+2024-10-25 02:34:39,274 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 02:34:39,677 - INFO - Starting video summary generation
+2024-10-25 02:34:39,718 - INFO - Timestamp token count: 13563
+2024-10-25 02:34:39,721 - INFO - Description token count: 1858
+2024-10-25 02:34:39,737 - INFO - Prompt token count: 15631
+2024-10-25 02:34:46,511 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 02:34:46,514 - INFO - Summary generated successfully
+2024-10-25 02:34:46,515 - INFO - Summary saved to summary.json
+2024-10-25 02:36:13,852 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 02:36:14,271 - INFO - Starting video summary generation
+2024-10-25 02:36:14,310 - INFO - Timestamp token count: 3192
+2024-10-25 02:36:14,311 - INFO - Description token count: 501
+2024-10-25 02:36:14,316 - INFO - Prompt token count: 3903
+2024-10-25 02:36:18,201 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 02:36:18,208 - INFO - Summary generated successfully
+2024-10-25 02:36:18,211 - INFO - Summary saved to summary.json
+2024-10-25 02:38:18,252 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 02:38:18,630 - INFO - Starting video summary generation
+2024-10-25 02:38:18,649 - INFO - Timestamp token count: 3192
+2024-10-25 02:38:18,658 - INFO - Description token count: 501
+2024-10-25 02:38:18,663 - INFO - Prompt token count: 3903
+2024-10-25 02:38:22,637 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 02:38:22,746 - INFO - Summary generated successfully
+2024-10-25 02:38:22,746 - INFO - Summary saved to summary.json
+2024-10-25 02:40:14,635 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 02:40:14,923 - INFO - Starting video summary generation
+2024-10-25 02:40:14,950 - INFO - Timestamp token count: 272
+2024-10-25 02:40:14,951 - INFO - Description token count: 282
+2024-10-25 02:40:14,952 - INFO - Prompt token count: 764
+2024-10-25 02:40:17,605 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 02:40:17,613 - INFO - Summary generated successfully
+2024-10-25 02:40:17,615 - INFO - Summary saved to summary.json
+2024-10-25 02:42:17,562 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 02:42:46,613 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 02:43:06,021 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 02:43:07,302 - INFO - Starting video summary generation
+2024-10-25 02:43:08,014 - INFO - Timestamp token count: 272
+2024-10-25 02:43:08,014 - INFO - Description token count: 282
+2024-10-25 02:43:08,014 - INFO - Prompt token count: 753
+2024-10-25 02:43:13,452 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 02:43:13,483 - ERROR - Error in summary generation: 1 validation error for OutputSchema
+timestamps
+  Maximum 10 timestamps allowed (type=value_error)
+2024-10-25 02:43:13,483 - ERROR - Error in GenerateYouTubeSummaryView: 1 validation error for OutputSchema
+timestamps
+  Maximum 10 timestamps allowed (type=value_error)
+2024-10-25 02:43:13,494 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 02:44:10,803 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 02:44:31,831 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 02:44:32,638 - INFO - Starting video summary generation
+2024-10-25 02:44:32,947 - INFO - Timestamp token count: 272
+2024-10-25 02:44:32,949 - INFO - Description token count: 282
+2024-10-25 02:44:32,950 - INFO - Prompt token count: 753
+2024-10-25 02:44:42,154 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 02:44:42,170 - ERROR - Error in summary generation: 10 validation errors for OutputSchema
+timestamps -> 0 -> start_time
+  Invalid timestamp format: 0:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 0 -> end_time
+  Invalid timestamp format: 5:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 1 -> start_time
+  Invalid timestamp format: 5:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 1 -> end_time
+  Invalid timestamp format: 10:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 2 -> start_time
+  Invalid timestamp format: 10:01. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 2 -> end_time
+  Invalid timestamp format: 15:01. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 3 -> start_time
+  Invalid timestamp format: 15:03. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 3 -> end_time
+  Invalid timestamp format: 20:03. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 4 -> start_time
+  Invalid timestamp format: 20:05. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 4 -> end_time
+  Invalid timestamp format: 25:05. Must be in HH:MM:SS format (type=value_error)
+2024-10-25 02:44:42,216 - ERROR - Error in GenerateYouTubeSummaryView: 10 validation errors for OutputSchema
+timestamps -> 0 -> start_time
+  Invalid timestamp format: 0:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 0 -> end_time
+  Invalid timestamp format: 5:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 1 -> start_time
+  Invalid timestamp format: 5:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 1 -> end_time
+  Invalid timestamp format: 10:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 2 -> start_time
+  Invalid timestamp format: 10:01. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 2 -> end_time
+  Invalid timestamp format: 15:01. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 3 -> start_time
+  Invalid timestamp format: 15:03. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 3 -> end_time
+  Invalid timestamp format: 20:03. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 4 -> start_time
+  Invalid timestamp format: 20:05. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 4 -> end_time
+  Invalid timestamp format: 25:05. Must be in HH:MM:SS format (type=value_error)
+2024-10-25 02:44:42,219 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 02:52:57,012 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 02:53:26,612 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 02:53:27,667 - INFO - Starting video summary generation
+2024-10-25 02:53:27,971 - INFO - Timestamp token count: 272
+2024-10-25 02:53:27,971 - INFO - Description token count: 282
+2024-10-25 02:53:27,972 - INFO - Prompt token count: 762
+2024-10-25 02:53:32,328 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 02:53:32,426 - INFO - Summary generated successfully
+2024-10-25 02:53:32,426 - INFO - Summary saved to summary.json
+2024-10-25 02:54:58,926 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 02:55:33,944 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 02:55:34,840 - INFO - Starting video summary generation
+2024-10-25 02:55:35,297 - INFO - Timestamp token count: 272
+2024-10-25 02:55:35,298 - INFO - Description token count: 282
+2024-10-25 02:55:35,298 - INFO - Prompt token count: 762
+2024-10-25 02:55:38,753 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 02:55:38,764 - INFO - Summary generated successfully
+2024-10-25 02:55:38,765 - INFO - Summary saved to summary.json
+2024-10-25 03:08:20,451 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:08:33,858 - INFO - Starting video summary generation
+2024-10-25 03:08:41,475 - INFO - Timestamp token count: 272
+2024-10-25 03:08:41,476 - INFO - Description token count: 282
+2024-10-25 03:08:41,478 - INFO - Prompt token count: 762
+2024-10-25 03:08:57,166 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 03:09:00,314 - INFO - Summary generated successfully
+2024-10-25 03:09:00,695 - INFO - Summary saved to summary.json
+2024-10-25 03:11:52,470 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:11:52,946 - INFO - Starting video summary generation
+2024-10-25 03:11:52,973 - INFO - Timestamp token count: 3300
+2024-10-25 03:11:52,975 - INFO - Description token count: 706
+2024-10-25 03:11:52,979 - INFO - Prompt token count: 4214
+2024-10-25 03:11:57,514 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 03:11:57,563 - INFO - Summary generated successfully
+2024-10-25 03:11:57,566 - INFO - Summary saved to summary.json
+2024-10-25 03:14:22,424 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:14:22,920 - INFO - Starting video summary generation
+2024-10-25 03:14:23,291 - INFO - Timestamp token count: 3080
+2024-10-25 03:14:23,444 - INFO - Description token count: 590
+2024-10-25 03:14:23,448 - INFO - Prompt token count: 3878
+2024-10-25 03:14:28,506 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 03:14:28,508 - INFO - Summary generated successfully
+2024-10-25 03:14:28,509 - INFO - Summary saved to summary.json
+2024-10-25 03:21:28,794 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 03:22:47,157 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:22:48,755 - INFO - Starting video summary generation
+2024-10-25 03:22:56,539 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2024-10-25 03:22:56,543 - ERROR - Error in summary generation: Error code: 503 - {'error': {'message': 'Service Unavailable', 'type': 'internal_server_error'}}
+2024-10-25 03:22:56,543 - ERROR - Error in GenerateYouTubeSummaryView: Error code: 503 - {'error': {'message': 'Service Unavailable', 'type': 'internal_server_error'}}
+2024-10-25 03:22:56,550 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 03:23:12,435 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:23:12,794 - INFO - Starting video summary generation
+2024-10-25 03:23:19,164 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2024-10-25 03:23:19,164 - ERROR - Error in summary generation: Error code: 503 - {'error': {'message': 'Service Unavailable', 'type': 'internal_server_error'}}
+2024-10-25 03:23:19,164 - ERROR - Error in GenerateYouTubeSummaryView: Error code: 503 - {'error': {'message': 'Service Unavailable', 'type': 'internal_server_error'}}
+2024-10-25 03:23:19,224 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 03:23:30,596 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:23:30,957 - INFO - Starting video summary generation
+2024-10-25 03:23:42,949 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 03:23:42,969 - ERROR - Error in summary generation: 1 validation error for OutputSchema
+timestamps
+  Maximum 15 timestamps allowed (type=value_error)
+2024-10-25 03:23:42,970 - ERROR - Error in GenerateYouTubeSummaryView: 1 validation error for OutputSchema
+timestamps
+  Maximum 15 timestamps allowed (type=value_error)
+2024-10-25 03:23:42,972 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 03:26:25,542 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 03:27:46,775 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 03:28:06,118 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 03:28:19,815 - WARNING - Unauthorized: /token/refresh/
+2024-10-25 03:28:57,911 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:28:58,828 - INFO - Starting video summary generation
+2024-10-25 03:28:59,429 - INFO - Timestamp token count: 3080
+2024-10-25 03:28:59,430 - INFO - Description token count: 590
+2024-10-25 03:28:59,435 - INFO - Prompt token count: 3889
+2024-10-25 03:29:22,893 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 03:29:22,910 - INFO - Summary generated successfully
+2024-10-25 03:29:22,910 - INFO - Summary saved to summary.json
+2024-10-25 03:29:38,812 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:29:39,135 - INFO - Starting video summary generation
+2024-10-25 03:29:39,169 - INFO - Timestamp token count: 3080
+2024-10-25 03:29:39,170 - INFO - Description token count: 590
+2024-10-25 03:29:39,176 - INFO - Prompt token count: 3889
+2024-10-25 03:29:47,004 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 03:29:47,021 - INFO - Summary generated successfully
+2024-10-25 03:29:47,022 - INFO - Summary saved to summary.json
+2024-10-25 03:31:05,399 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 03:31:25,987 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:31:27,439 - INFO - Starting video summary generation
+2024-10-25 03:31:27,825 - INFO - Timestamp token count: 3080
+2024-10-25 03:31:27,825 - INFO - Description token count: 590
+2024-10-25 03:31:27,825 - INFO - Prompt token count: 3878
+2024-10-25 03:31:38,403 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 03:31:38,403 - INFO - Summary generated successfully
+2024-10-25 03:31:38,403 - INFO - Summary saved to summary.json
+2024-10-25 03:32:51,105 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\AI_workflow_files\yt_summarizer.py changed, reloading.
+2024-10-25 03:33:06,782 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:33:07,730 - INFO - Starting video summary generation
+2024-10-25 03:33:08,077 - INFO - Timestamp token count: 3080
+2024-10-25 03:33:08,077 - INFO - Description token count: 590
+2024-10-25 03:33:08,077 - INFO - Prompt token count: 3876
+2024-10-25 03:33:15,682 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2024-10-25 03:33:15,682 - ERROR - Error in summary generation: Error code: 503 - {'error': {'message': 'Service Unavailable', 'type': 'internal_server_error'}}
+2024-10-25 03:33:15,682 - ERROR - Error in GenerateYouTubeSummaryView: Error code: 503 - {'error': {'message': 'Service Unavailable', 'type': 'internal_server_error'}}
+2024-10-25 03:33:15,682 - ERROR - Internal Server Error: /api/summaries/
+2024-10-25 03:33:21,954 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:33:22,256 - INFO - Starting video summary generation
+2024-10-25 03:33:22,290 - INFO - Timestamp token count: 3080
+2024-10-25 03:33:22,291 - INFO - Description token count: 590
+2024-10-25 03:33:22,294 - INFO - Prompt token count: 3876
+2024-10-25 03:33:31,105 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 03:33:31,132 - INFO - Summary generated successfully
+2024-10-25 03:33:31,134 - INFO - Summary saved to summary.json
+2024-10-25 03:34:09,948 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:34:10,250 - INFO - Starting video summary generation
+2024-10-25 03:34:10,285 - INFO - Timestamp token count: 278
+2024-10-25 03:34:10,288 - INFO - Description token count: 1833
+2024-10-25 03:34:10,292 - INFO - Prompt token count: 2317
+2024-10-25 03:34:18,658 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 03:34:18,660 - INFO - Summary generated successfully
+2024-10-25 03:34:18,661 - INFO - Summary saved to summary.json
+2024-10-25 03:35:12,735 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 03:35:13,018 - INFO - Starting video summary generation
+2024-10-25 03:35:13,050 - INFO - Timestamp token count: 275
+2024-10-25 03:35:13,052 - INFO - Description token count: 1164
+2024-10-25 03:35:13,056 - INFO - Prompt token count: 1645
+2024-10-25 03:35:20,307 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 03:35:20,310 - INFO - Summary generated successfully
+2024-10-25 03:35:20,311 - INFO - Summary saved to summary.json
+2024-10-25 03:59:33,293 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 03:59:33,329 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 03:59:33,353 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 03:59:33,397 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 03:59:33,408 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 03:59:33,452 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 03:59:33,476 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-25 04:01:27,227 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 04:01:27,592 - INFO - Starting video summary generation
+2024-10-25 04:01:27,641 - INFO - Timestamp token count: 162
+2024-10-25 04:01:27,650 - INFO - Description token count: 448
+2024-10-25 04:01:27,653 - INFO - Prompt token count: 816
+2024-10-25 04:01:29,653 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 04:01:29,656 - INFO - Summary generated successfully
+2024-10-25 04:01:29,656 - INFO - Summary saved to summary.json
+2024-10-25 04:01:48,841 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-25 04:01:49,123 - INFO - Starting video summary generation
+2024-10-25 04:01:49,154 - INFO - Timestamp token count: 284
+2024-10-25 04:01:49,155 - INFO - Description token count: 655
+2024-10-25 04:01:49,156 - INFO - Prompt token count: 1145
+2024-10-25 04:01:51,987 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-25 04:01:51,995 - INFO - Summary generated successfully
+2024-10-25 04:01:52,036 - INFO - Summary saved to summary.json
+2024-10-25 04:16:06,174 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\serializers.py changed, reloading.
+2024-10-25 04:18:00,766 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\views.py changed, reloading.
+2024-10-25 04:18:36,401 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\views.py changed, reloading.
+2024-10-25 04:19:08,036 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\urls.py changed, reloading.
+2024-10-25 04:23:10,832 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\urls.py changed, reloading.
+2024-10-25 04:38:53,247 - WARNING - Bad Request: /api/feedback/
+2024-10-25 05:01:51,744 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\serializers.py changed, reloading.
+2024-10-25 05:02:32,242 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\views.py changed, reloading.
+2024-10-25 05:03:18,975 - INFO - F:\Praveer\IMP STP\Project FSU\backend\summaries\urls.py changed, reloading.
+2024-10-26 02:28:13,443 - WARNING - Not Found: /favicon.ico
+2024-10-26 02:42:27,453 - WARNING - Unauthorized: /auth/check-auth/
+2024-10-26 02:43:10,401 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-26 02:43:13,531 - INFO - Starting video summary generation
+2024-10-26 02:43:14,485 - INFO - Timestamp token count: 432
+2024-10-26 02:43:14,487 - INFO - Description token count: 275
+2024-10-26 02:43:14,488 - INFO - Prompt token count: 913
+2024-10-26 02:43:19,353 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-26 02:43:19,420 - INFO - Summary generated successfully
+2024-10-26 02:43:19,420 - INFO - Summary saved to summary.json
+2024-10-26 02:44:37,947 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:45:17,135 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:48:00,585 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:49:08,281 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-26 02:49:08,881 - INFO - Starting video summary generation
+2024-10-26 02:49:08,909 - INFO - Timestamp token count: 3084
+2024-10-26 02:49:08,910 - INFO - Description token count: 427
+2024-10-26 02:49:08,914 - INFO - Prompt token count: 3717
+2024-10-26 02:49:13,060 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-26 02:49:13,060 - INFO - Summary generated successfully
+2024-10-26 02:49:13,060 - INFO - Summary saved to summary.json
+2024-10-26 02:52:40,926 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:55:35,213 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:55:37,268 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:55:39,416 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:55:40,732 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:55:40,887 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:56:04,505 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:56:13,150 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:56:21,283 - WARNING - Bad Request: /api/profile/
+2024-10-26 02:56:50,398 - WARNING - Bad Request: /api/profile/
+2024-10-26 03:02:13,675 - WARNING - Bad Request: /api/profile/
+2024-10-26 03:02:38,568 - WARNING - Bad Request: /api/profile/
+2024-10-26 03:08:00,780 - WARNING - Bad Request: /api/profile/
+2024-10-26 03:09:24,932 - WARNING - Unauthorized: /auth/login/
+2024-10-26 03:09:43,692 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-26 03:09:44,398 - INFO - Starting video summary generation
+2024-10-26 03:09:44,452 - INFO - Timestamp token count: 3084
+2024-10-26 03:09:44,453 - INFO - Description token count: 427
+2024-10-26 03:09:44,455 - INFO - Prompt token count: 3717
+2024-10-26 03:09:49,138 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-26 03:09:49,138 - INFO - Summary generated successfully
+2024-10-26 03:09:49,138 - INFO - Summary saved to summary.json
+2024-10-26 03:16:27,943 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-10-26 03:16:28,731 - INFO - Starting video summary generation
+2024-10-26 03:16:28,764 - INFO - Timestamp token count: 379
+2024-10-26 03:16:28,766 - INFO - Description token count: 198
+2024-10-26 03:16:28,767 - INFO - Prompt token count: 783
+2024-10-26 03:16:31,605 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-26 03:16:31,614 - INFO - Summary generated successfully
+2024-10-26 03:16:31,617 - INFO - Summary saved to summary.json
+2024-10-26 03:47:35,069 - WARNING - Unauthorized: /auth/check-auth/
+2024-11-05 20:53:48,364 - WARNING - Bad Request: /api/summaries/
+2024-11-05 20:53:57,150 - WARNING - Bad Request: /api/summaries/
+2024-11-05 20:54:29,213 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-05 20:54:40,427 - INFO - Starting video summary generation
+2024-11-05 20:54:44,529 - INFO - Timestamp token count: 258
+2024-11-05 20:54:44,537 - INFO - Description token count: 325
+2024-11-05 20:54:44,538 - INFO - Prompt token count: 789
+2024-11-05 20:54:51,368 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-05 20:54:51,435 - INFO - Summary generated successfully
+2024-11-05 20:54:51,435 - INFO - Summary saved to summary.json
+2024-11-06 00:55:03,020 - WARNING - Bad Request: /auth/registration/
+2024-11-06 00:55:05,509 - WARNING - Bad Request: /auth/registration/
+2024-11-06 20:49:27,581 - WARNING - Unauthorized: /auth/check-auth/
+2024-11-06 20:51:39,332 - WARNING - Bad Request: /auth/registration/
+2024-11-06 20:51:48,444 - WARNING - Bad Request: /auth/registration/
+2024-11-06 20:52:18,139 - WARNING - Bad Request: /auth/registration/
+2024-11-06 20:54:23,596 - WARNING - Bad Request: /auth/registration/
+2024-11-06 20:58:32,311 - WARNING - Bad Request: /auth/registration/
+2024-11-06 20:59:58,545 - WARNING - Bad Request: /auth/registration/
+2024-11-06 21:01:26,531 - WARNING - Bad Request: /auth/registration/
+2024-11-06 21:02:23,187 - WARNING - Bad Request: /auth/registration/
+2024-11-06 21:02:32,100 - WARNING - Bad Request: /auth/registration/
+2024-11-06 21:04:05,274 - WARNING - Unauthorized: /auth/login/
+2024-11-06 21:04:40,566 - WARNING - Unauthorized: /auth/login/
+2024-11-06 21:04:50,814 - WARNING - Unauthorized: /auth/login/
+2024-11-06 21:08:01,652 - WARNING - Bad Request: /auth/registration/
+2024-11-06 21:08:04,992 - WARNING - Bad Request: /auth/registration/
+2024-11-06 21:08:54,519 - WARNING - Bad Request: /auth/registration/
+2024-11-06 21:09:08,948 - ERROR - Internal Server Error: /auth/registration/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: core_customuser.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 87, in register_user
+    user.save()
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: core_customuser.username
+2024-11-06 21:11:40,664 - ERROR - Internal Server Error: /auth/registration/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: core_customuser.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 87, in register_user
+    user.save()
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: core_customuser.username
+2024-11-06 21:13:41,583 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\models.py changed, reloading.
+2024-11-06 21:17:06,770 - ERROR - Internal Server Error: /auth/registration/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: core_customuser.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 87, in register_user
+    user.save()
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: core_customuser.username
+2024-11-06 21:17:35,616 - ERROR - Internal Server Error: /auth/registration/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: core_customuser.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 87, in register_user
+    user.save()
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: core_customuser.username
+2024-11-06 21:18:34,983 - ERROR - Internal Server Error: /auth/registration/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: core_customuser.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 87, in register_user
+    user.save()
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: core_customuser.username
+2024-11-06 21:20:49,835 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\models.py changed, reloading.
+2024-11-06 21:24:12,537 - ERROR - Internal Server Error: /auth/registration/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: core_customuser.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 87, in register_user
+    user.save()
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: core_customuser.username
+2024-11-06 21:25:11,091 - ERROR - Internal Server Error: /auth/registration/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: core_customuser.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 87, in register_user
+    user.save()
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: core_customuser.username
+2024-11-06 21:25:53,158 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\models.py changed, reloading.
+2024-11-06 21:49:28,157 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\models.py changed, reloading.
+2024-11-06 21:53:35,486 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\models.py changed, reloading.
+2024-11-06 21:59:17,195 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-06 21:59:26,830 - INFO - Starting video summary generation
+2024-11-06 21:59:31,459 - INFO - Timestamp token count: 1247
+2024-11-06 21:59:31,461 - INFO - Description token count: 626
+2024-11-06 21:59:31,463 - INFO - Prompt token count: 2079
+2024-11-06 21:59:41,323 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-06 21:59:41,664 - ERROR - Error in summary generation: 17 validation errors for OutputSchema
+timestamps -> 11 -> end_time
+  Invalid timestamp format: 01:03:02:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 12 -> start_time
+  Invalid timestamp format: 01:03:02:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 12 -> end_time
+  Invalid timestamp format: 01:09:31:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 13 -> start_time
+  Invalid timestamp format: 01:09:31:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 13 -> end_time
+  Invalid timestamp format: 01:15:48:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 14 -> start_time
+  Invalid timestamp format: 01:15:48:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 14 -> end_time
+  Invalid timestamp format: 01:23:53:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 15 -> start_time
+  Invalid timestamp format: 01:23:53:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 15 -> end_time
+  Invalid timestamp format: 01:33:37:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 16 -> start_time
+  Invalid timestamp format: 01:33:37:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 16 -> end_time
+  Invalid timestamp format: 01:35:52:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 17 -> start_time
+  Invalid timestamp format: 01:35:52:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 17 -> end_time
+  Invalid timestamp format: 01:40:26:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 18 -> start_time
+  Invalid timestamp format: 01:40:26:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 18 -> end_time
+  Invalid timestamp format: 01:44:35:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 19 -> start_time
+  Invalid timestamp format: 01:44:35:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 19 -> end_time
+  Invalid timestamp format: 01:50:52:00. Must be in HH:MM:SS format (type=value_error)
+2024-11-06 21:59:41,669 - ERROR - Error in GenerateYouTubeSummaryView: 17 validation errors for OutputSchema
+timestamps -> 11 -> end_time
+  Invalid timestamp format: 01:03:02:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 12 -> start_time
+  Invalid timestamp format: 01:03:02:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 12 -> end_time
+  Invalid timestamp format: 01:09:31:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 13 -> start_time
+  Invalid timestamp format: 01:09:31:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 13 -> end_time
+  Invalid timestamp format: 01:15:48:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 14 -> start_time
+  Invalid timestamp format: 01:15:48:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 14 -> end_time
+  Invalid timestamp format: 01:23:53:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 15 -> start_time
+  Invalid timestamp format: 01:23:53:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 15 -> end_time
+  Invalid timestamp format: 01:33:37:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 16 -> start_time
+  Invalid timestamp format: 01:33:37:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 16 -> end_time
+  Invalid timestamp format: 01:35:52:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 17 -> start_time
+  Invalid timestamp format: 01:35:52:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 17 -> end_time
+  Invalid timestamp format: 01:40:26:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 18 -> start_time
+  Invalid timestamp format: 01:40:26:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 18 -> end_time
+  Invalid timestamp format: 01:44:35:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 19 -> start_time
+  Invalid timestamp format: 01:44:35:00. Must be in HH:MM:SS format (type=value_error)
+timestamps -> 19 -> end_time
+  Invalid timestamp format: 01:50:52:00. Must be in HH:MM:SS format (type=value_error)
+2024-11-06 21:59:41,672 - ERROR - Internal Server Error: /api/summaries/
+2024-11-06 22:00:09,021 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-06 22:00:09,312 - INFO - Starting video summary generation
+2024-11-06 22:00:09,341 - INFO - Timestamp token count: 1247
+2024-11-06 22:00:09,343 - INFO - Description token count: 626
+2024-11-06 22:00:09,345 - INFO - Prompt token count: 2079
+2024-11-06 22:00:19,138 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-06 22:00:19,209 - INFO - Summary generated successfully
+2024-11-06 22:00:19,210 - INFO - Summary saved to summary.json
+2024-11-06 22:01:33,257 - WARNING - Bad Request: /auth/registration/
+2024-11-06 22:01:55,680 - WARNING - Bad Request: /auth/registration/
+2024-11-06 22:02:13,123 - WARNING - Bad Request: /auth/registration/
+2024-11-06 22:06:04,471 - WARNING - Bad Request: /auth/registration/
+2024-11-06 23:35:21,973 - WARNING - Bad Request: /auth/registration/
+2024-11-06 23:35:58,299 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 114, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 6!
+2024-11-06 23:36:11,034 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 114, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 6!
+2024-11-06 23:40:10,024 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 114, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 2!
+2024-11-06 23:40:19,736 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 114, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 2!
+2024-11-06 23:40:24,363 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 114, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 2!
+2024-11-06 23:42:43,481 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 114, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 2!
+2024-11-06 23:44:34,997 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 114, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 2!
+2024-11-06 23:44:59,127 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 114, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 2!
+2024-11-06 23:48:12,971 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 114, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 7!
+2024-11-06 23:49:23,492 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\views.py changed, reloading.
+2024-11-06 23:50:14,860 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 115, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 7!
+2024-11-06 23:50:46,502 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 115, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 7!
+2024-11-06 23:51:33,854 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\views.py changed, reloading.
+2024-11-06 23:51:48,806 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 115, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 7!
+2024-11-06 23:53:28,668 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\views.py changed, reloading.
+2024-11-06 23:54:25,878 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\views.py changed, reloading.
+2024-11-06 23:57:08,211 - WARNING - Not Found: /favicon.ico
+2024-11-06 23:59:37,224 - ERROR - Internal Server Error: /auth/login/
+Traceback (most recent call last):
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\backend\core\views.py", line 114, in login_user
+    user = authenticate(request, username=username, password=password)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\contrib\auth\base_user.py", line 56, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "F:\Praveer\IMP STP\Project FSU\project_env\lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+core.models.CustomUser.MultipleObjectsReturned: get() returned more than one CustomUser -- it returned 2!
+2024-11-07 00:03:21,227 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\views.py changed, reloading.
+2024-11-07 00:07:41,360 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\views.py changed, reloading.
+2024-11-07 00:09:50,346 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\models.py changed, reloading.
+2024-11-07 00:10:11,042 - INFO - F:\Praveer\IMP STP\Project FSU\backend\core\models.py changed, reloading.
+2024-11-07 00:25:35,416 - WARNING - Bad Request: /auth/registration/
+2024-11-07 00:37:50,007 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-07 00:37:53,178 - INFO - Starting video summary generation
+2024-11-07 00:37:53,828 - INFO - Timestamp token count: 13845
+2024-11-07 00:37:53,830 - INFO - Description token count: 1230
+2024-11-07 00:37:53,843 - INFO - Prompt token count: 15281
+2024-11-07 00:37:55,668 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2024-11-07 00:37:55,669 - ERROR - Error in summary generation: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01j6msaa9zehjt0w6229rkp9q1` on tokens per minute (TPM): Limit 6000, Requested 7363, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2024-11-07 00:37:55,670 - ERROR - Error in GenerateYouTubeSummaryView: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01j6msaa9zehjt0w6229rkp9q1` on tokens per minute (TPM): Limit 6000, Requested 7363, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2024-11-07 00:37:55,672 - ERROR - Internal Server Error: /api/summaries/
+2024-11-07 00:38:06,963 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-07 00:38:07,372 - INFO - Starting video summary generation
+2024-11-07 00:38:07,419 - INFO - Timestamp token count: 13845
+2024-11-07 00:38:07,429 - INFO - Description token count: 1230
+2024-11-07 00:38:07,430 - INFO - Prompt token count: 15281
+2024-11-07 00:38:07,753 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2024-11-07 00:38:07,753 - ERROR - Error in summary generation: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01j6msaa9zehjt0w6229rkp9q1` on tokens per minute (TPM): Limit 6000, Requested 7363, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2024-11-07 00:38:07,753 - ERROR - Error in GenerateYouTubeSummaryView: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01j6msaa9zehjt0w6229rkp9q1` on tokens per minute (TPM): Limit 6000, Requested 7363, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2024-11-07 00:38:07,753 - ERROR - Internal Server Error: /api/summaries/
+2024-11-07 00:39:31,361 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-07 00:39:31,922 - INFO - Starting video summary generation
+2024-11-07 00:39:31,965 - INFO - Timestamp token count: 13845
+2024-11-07 00:39:31,965 - INFO - Description token count: 1230
+2024-11-07 00:39:31,985 - INFO - Prompt token count: 15281
+2024-11-07 00:39:32,286 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2024-11-07 00:39:32,286 - ERROR - Error in summary generation: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01j6msaa9zehjt0w6229rkp9q1` on tokens per minute (TPM): Limit 6000, Requested 7363, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2024-11-07 00:39:32,286 - ERROR - Error in GenerateYouTubeSummaryView: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01j6msaa9zehjt0w6229rkp9q1` on tokens per minute (TPM): Limit 6000, Requested 7363, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2024-11-07 00:39:32,286 - ERROR - Internal Server Error: /api/summaries/
+2024-11-07 00:39:42,747 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-07 00:39:43,161 - INFO - Starting video summary generation
+2024-11-07 00:39:43,212 - INFO - Timestamp token count: 13845
+2024-11-07 00:39:43,212 - INFO - Description token count: 1230
+2024-11-07 00:39:43,236 - INFO - Prompt token count: 15281
+2024-11-07 00:39:43,846 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2024-11-07 00:39:43,846 - ERROR - Error in summary generation: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01j6msaa9zehjt0w6229rkp9q1` on tokens per minute (TPM): Limit 6000, Requested 7363, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2024-11-07 00:39:43,846 - ERROR - Error in GenerateYouTubeSummaryView: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01j6msaa9zehjt0w6229rkp9q1` on tokens per minute (TPM): Limit 6000, Requested 7363, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2024-11-07 00:39:43,861 - ERROR - Internal Server Error: /api/summaries/
+2024-11-07 00:41:43,065 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-07 00:41:43,421 - INFO - Starting video summary generation
+2024-11-07 00:41:43,550 - INFO - Timestamp token count: 5204
+2024-11-07 00:41:43,551 - INFO - Description token count: 265
+2024-11-07 00:41:43,556 - INFO - Prompt token count: 5675
+2024-11-07 00:41:58,562 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2024-11-07 00:41:58,562 - INFO - Retrying request to /openai/v1/chat/completions in 0.896898 seconds
+2024-11-07 00:42:03,960 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-07 00:42:04,036 - INFO - Summary generated successfully
+2024-11-07 00:42:04,037 - INFO - Summary saved to summary.json
+2024-11-08 18:34:44,702 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-08 18:34:47,099 - INFO - Starting video summary generation
+2024-11-08 18:34:47,669 - INFO - Timestamp token count: 486
+2024-11-08 18:34:47,669 - INFO - Description token count: 303
+2024-11-08 18:34:47,685 - INFO - Prompt token count: 995
+2024-11-08 18:34:52,005 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-08 18:34:52,102 - INFO - Summary generated successfully
+2024-11-08 18:34:52,119 - INFO - Summary saved to summary.json
+2024-11-08 18:37:33,399 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-08 18:37:33,718 - INFO - Starting video summary generation
+2024-11-08 18:37:33,748 - INFO - Timestamp token count: 163
+2024-11-08 18:37:33,749 - INFO - Description token count: 469
+2024-11-08 18:37:33,751 - INFO - Prompt token count: 838
+2024-11-08 18:37:36,387 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-08 18:37:36,390 - INFO - Summary generated successfully
+2024-11-08 18:37:36,391 - INFO - Summary saved to summary.json
+2024-11-08 18:38:05,764 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-08 18:38:06,122 - INFO - Starting video summary generation
+2024-11-08 18:38:06,148 - INFO - Timestamp token count: 163
+2024-11-08 18:38:06,149 - INFO - Description token count: 469
+2024-11-08 18:38:06,150 - INFO - Prompt token count: 838
+2024-11-08 18:38:21,524 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-08 18:38:21,527 - INFO - Summary generated successfully
+2024-11-08 18:38:21,527 - INFO - Summary saved to summary.json
+2024-11-08 20:20:44,202 - WARNING - Unauthorized: /auth/check-auth/
+2024-11-08 20:37:43,677 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-08 20:37:44,235 - INFO - Starting video summary generation
+2024-11-08 20:37:44,271 - INFO - Timestamp token count: 271
+2024-11-08 20:37:44,275 - INFO - Description token count: 152
+2024-11-08 20:37:44,277 - INFO - Prompt token count: 629
+2024-11-08 20:37:48,067 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-08 20:37:48,067 - INFO - Summary generated successfully
+2024-11-08 20:37:48,067 - INFO - Summary saved to summary.json
+2024-11-08 20:52:03,495 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-08 20:52:03,869 - INFO - Starting video summary generation
+2024-11-08 20:52:03,899 - INFO - Timestamp token count: 379
+2024-11-08 20:52:03,902 - INFO - Description token count: 198
+2024-11-08 20:52:03,904 - INFO - Prompt token count: 783
+2024-11-08 20:52:10,946 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-08 20:52:10,954 - INFO - Summary generated successfully
+2024-11-08 20:52:10,957 - INFO - Summary saved to summary.json
+2024-11-08 21:55:57,678 - WARNING - Not Found: /
+2024-11-08 21:55:58,835 - WARNING - Not Found: /favicon.ico
+2024-11-08 21:56:19,261 - WARNING - Unauthorized: /auth/check-auth/
+2024-11-08 21:58:07,875 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-08 21:58:13,477 - INFO - Starting video summary generation
+2024-11-08 21:58:15,526 - INFO - Timestamp token count: 378
+2024-11-08 21:58:15,527 - INFO - Description token count: 331
+2024-11-08 21:58:15,529 - INFO - Prompt token count: 915
+2024-11-08 21:58:20,088 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-08 21:58:20,661 - INFO - Summary generated successfully
+2024-11-08 21:58:20,662 - INFO - Summary saved to summary.json
+2024-11-09 14:34:29,170 - WARNING - Not Found: /
+2024-11-09 14:34:29,929 - WARNING - Not Found: /favicon.ico
+2024-11-09 15:27:42,952 - WARNING - Unauthorized: /auth/login/
+2024-11-09 15:37:14,174 - WARNING - Bad Request: /api/profile/
+2024-11-09 15:37:25,331 - WARNING - Bad Request: /api/profile/
+2024-11-09 15:37:52,384 - WARNING - Bad Request: /api/profile/
+2024-11-09 15:37:59,256 - WARNING - Bad Request: /api/profile/
+2024-11-09 15:48:45,837 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-09 15:48:46,783 - ERROR - Error in GenerateYouTubeSummaryView: 
+**********************************************************************
+  Resource [93mstopwords[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('stopwords')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mcorpora/stopwords[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\Praveer\\IMP STP\\PROJECT-FSU\\project_env\\nltk_data'
+    - 'D:\\Praveer\\IMP STP\\PROJECT-FSU\\project_env\\share\\nltk_data'
+    - 'D:\\Praveer\\IMP STP\\PROJECT-FSU\\project_env\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2024-11-09 15:48:46,785 - ERROR - Internal Server Error: /api/summaries/
+2024-11-09 15:49:23,385 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-09 15:49:23,945 - ERROR - Error in GenerateYouTubeSummaryView: 
+**********************************************************************
+  Resource [93mstopwords[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('stopwords')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mcorpora/stopwords[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\Praveer\\IMP STP\\PROJECT-FSU\\project_env\\nltk_data'
+    - 'D:\\Praveer\\IMP STP\\PROJECT-FSU\\project_env\\share\\nltk_data'
+    - 'D:\\Praveer\\IMP STP\\PROJECT-FSU\\project_env\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2024-11-09 15:49:23,947 - ERROR - Internal Server Error: /api/summaries/
+2024-11-09 15:50:48,275 - INFO - D:\Praveer\IMP STP\PROJECT-FSU\backend\summaries\AI_workflow_files\major_topics.py changed, reloading.
+2024-11-09 15:50:54,528 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-09 15:50:55,448 - INFO - Starting video summary generation
+2024-11-09 15:50:59,869 - INFO - Timestamp token count: 487
+2024-11-09 15:50:59,869 - INFO - Description token count: 980
+2024-11-09 15:50:59,869 - INFO - Prompt token count: 1673
+2024-11-09 15:51:05,087 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-09 15:51:05,104 - INFO - Summary generated successfully
+2024-11-09 15:51:05,104 - INFO - Summary saved to summary.json
+2024-11-09 15:52:41,232 - INFO - D:\Praveer\IMP STP\PROJECT-FSU\backend\summaries\AI_workflow_files\major_topics.py changed, reloading.
+2024-11-09 15:53:19,727 - INFO - D:\Praveer\IMP STP\PROJECT-FSU\backend\summaries\AI_workflow_files\major_topics.py changed, reloading.
+2024-11-09 16:00:10,478 - WARNING - Not Found: /favicon.ico
+2024-11-09 19:16:35,534 - WARNING - Unauthorized: /auth/check-auth/
