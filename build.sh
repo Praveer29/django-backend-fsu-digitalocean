@@ -2,11 +2,16 @@
 # Exit on error
 set -o errexit
 
-# Modify this line as needed for your package manager (pip, poetry, etc.)
+# Install dependencies
 pip install -r requirements.txt
 
-# Convert static asset files
-python manage.py collectstatic --no-input
-
-# Apply any outstanding database migrations
+# Run migrations
 python manage.py migrate
+
+# Collect static files
+python manage.py collectstatic --noinput
+
+# Create a superuser without input (non-interactive)
+# this command will create a superuser and it will use the env variables - DJANGO_SUPERUSER_USERNAME , DJANGO_SUPERUSER_EMAIL , DJANGO_SUPERUSER_PASSWORD
+# after the superuser has been created when deployment, log in, and change the password and do not store the new password in the env variables in render
+python manage.py createsuperuser --noinput || true
