@@ -1,7 +1,7 @@
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api._errors import TranscriptsDisabled, NoTranscriptFound
 import re
-
+import random
 
 transcript_file_path = r"transcript.txt"
 
@@ -22,7 +22,29 @@ def extract_youtube_video_id(url):
     print('error at extract_youtube_video_id')
     return None
 
+# Load proxies from the provided file or list
+proxies = [
+    "198.23.239.134:6540:mmdczgve:2dc89wuxe3oc",
+    "207.244.217.165:6712:mmdczgve:2dc89wuxe3oc",
+    "107.172.163.27:6543:mmdczgve:2dc89wuxe3oc",
+    "64.137.42.112:5157:mmdczgve:2dc89wuxe3oc",
+    "173.211.0.148:6641:mmdczgve:2dc89wuxe3oc",
+    "161.123.152.115:6360:mmdczgve:2dc89wuxe3oc",
+    "167.160.180.203:6754:mmdczgve:2dc89wuxe3oc",
+    "154.36.110.199:6853:mmdczgve:2dc89wuxe3oc",
+    "173.0.9.70:5653:mmdczgve:2dc89wuxe3oc",
+    "173.0.9.209:5792:mmdczgve:2dc89wuxe3oc"
+]
 
+def get_random_proxy():
+    """Selects a random proxy from the proxy list."""
+    proxy = random.choice(proxies)
+    ip, port, username, password = proxy.split(':')
+    proxy_url = f"http://{username}:{password}@{ip}:{port}"
+    return {
+        "http": proxy_url,
+        "https": proxy_url
+    }
 
 
 def get_transcript(video_id):
@@ -32,10 +54,11 @@ def get_transcript(video_id):
     """
     try:
         transcript = None
+        proxy = get_random_proxy()  # Get a random proxy for each request
 
         try:
             # Attempt to fetch the transcript in English.
-            transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=['en'])
+            transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=['en'],proxies=proxy)
         except NoTranscriptFound:
             print("English transcript not found. Attempting to fetch in any available language...")
             # If English transcript is not found, attempt to list and fetch any available transcript.

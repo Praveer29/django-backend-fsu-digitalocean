@@ -1,18 +1,25 @@
 
 
-try:
-    from nltk.corpus import stopwords
-except LookupError:
-    import nltk
-    nltk.download('stopwords')
-    from nltk.corpus import stopwords
+# try:
+#     from nltk.corpus import stopwords
+# except LookupError:
+#     import nltk
+#     nltk.download('stopwords')
+#     from nltk.corpus import stopwords
+
+# stopwords will be downloaded as per build.sh file
+import nltk
+nltk.data.path.append('./nltk_data') # relative path for nltk data, (downloaded in root directory) 
+
+from nltk.corpus import stopwords
+
 
 
 import re
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 # import nltk
-from nltk.corpus import stopwords
+
 from langdetect import detect
 
 # nltk.download('stopwords')     # need to download it if not

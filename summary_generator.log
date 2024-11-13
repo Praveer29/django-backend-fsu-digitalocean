@@ -1635,3 +1635,31 @@ core.models.CustomUser.MultipleObjectsReturned: get() returned more than one Cus
 2024-11-09 15:53:19,727 - INFO - D:\Praveer\IMP STP\PROJECT-FSU\backend\summaries\AI_workflow_files\major_topics.py changed, reloading.
 2024-11-09 16:00:10,478 - WARNING - Not Found: /favicon.ico
 2024-11-09 19:16:35,534 - WARNING - Unauthorized: /auth/check-auth/
+2024-11-14 23:39:10,445 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-14 23:39:12,459 - INFO - Starting video summary generation
+2024-11-14 23:39:13,576 - INFO - Timestamp token count: 648
+2024-11-14 23:39:13,577 - INFO - Description token count: 165
+2024-11-14 23:39:13,580 - INFO - Prompt token count: 1019
+2024-11-14 23:39:19,157 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-14 23:39:19,176 - INFO - Summary generated successfully
+2024-11-14 23:39:19,178 - INFO - Summary saved to summary.json
+2024-11-14 23:44:30,039 - INFO - D:\Praveer\IMP STP\PROJECT-FSU\backend\summaries\views.py changed, reloading.
+2024-11-14 23:44:38,820 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-14 23:44:39,749 - INFO - Starting video summary generation
+2024-11-14 23:44:40,329 - INFO - Timestamp token count: 648
+2024-11-14 23:44:40,329 - INFO - Description token count: 165
+2024-11-14 23:44:40,329 - INFO - Prompt token count: 1019
+2024-11-14 23:44:44,370 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-14 23:44:44,370 - INFO - Summary generated successfully
+2024-11-14 23:44:44,370 - INFO - Summary saved to summary.json
+2024-11-14 23:44:58,205 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-14 23:44:58,703 - INFO - Starting video summary generation
+2024-11-14 23:44:59,119 - INFO - Timestamp token count: 648
+2024-11-14 23:44:59,119 - INFO - Description token count: 165
+2024-11-14 23:44:59,119 - INFO - Prompt token count: 1019
+2024-11-14 23:45:02,955 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-14 23:45:02,957 - INFO - Summary generated successfully
+2024-11-14 23:45:02,957 - INFO - Summary saved to summary.json
+2024-11-14 23:45:45,005 - INFO - D:\Praveer\IMP STP\PROJECT-FSU\backend\summaries\views.py changed, reloading.
+2024-11-14 23:47:57,890 - INFO - D:\Praveer\IMP STP\PROJECT-FSU\backend\summaries\AI_workflow_files\major_topics.py changed, reloading.
+2024-11-14 23:52:56,103 - INFO - D:\Praveer\IMP STP\PROJECT-FSU\backend\backend\settings.py changed, reloading.

@@ -15,7 +15,10 @@ import os
 # load_dotenv()  #will load env variables
 
 
+
+
 # uploading env variables using os.environ instead of os.getenv
+
 GOOGLE_CLIENT_ID = os.environ.get('GOOGLE_CLIENT_ID')
 GOOGLE_CLIENT_SECRET = os.environ.get('GOOGLE_CLIENT_SECRET')
 DJANGO_SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
@@ -31,7 +34,12 @@ SECRET_KEY = DJANGO_SECRET_KEY
 DEBUG = DEBUG_STATUS.lower() == 'true'
 
 # ALLOWED_HOSTS = ['localhost','127.0.0.1']
-ALLOWED_HOSTS = BACKEND_ALLOWED_HOSTS.split(' ')
+# ALLOWED_HOSTS = BACKEND_ALLOWED_HOSTS.split(' ')
+
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "django-backend-fsu", 
+                 "django-backend-fsu.onrender.com",  
+                 "overshot",  "overshot.onrender.com", "overshot.in.net", 
+                 "www.overshot.in.net"]
 
 SITE_ID = 3   #ALWAYS CHECK FOR CURRENT SITE ID on DJANGO ADMIN INTEFACE WHILE CLICKING ON THE SITE IN URL
 
@@ -65,8 +73,8 @@ AUTH_USER_MODEL = 'core.CustomUser'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
+        # 'rest_framework.authentication.BasicAuthentication',
         'rest_framework_simplejwt.authentication.JWTAuthentication'
     ),
     'DEFAULT_PERMISSION_CLASSES': (
@@ -97,6 +105,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', # CORS middleware should be first
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',  # added middleware for render deploy
+    'django.middleware.gzip.GZipMiddleware',  # Enable GZip compression for render deploy (help in faster responsiveness during api calls)
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -139,7 +148,11 @@ DATABASES = {
 }
 
 # Replace the SQLite DATABASES configuration with PostgreSQL:
-DATABASES['default'] = dj_database_url.parse(POSTGRESQL_URL)
+# DATABASES['default'] = dj_database_url.parse(POSTGRESQL_URL)
+
+DATABASES = {
+    'default': dj_database_url.parse(POSTGRESQL_URL, conn_max_age=600)
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -230,9 +243,25 @@ ACCOUNT_EMAIL_REQUIRED = True
 #     'http://localhost:5173','http://127.0.0.1:8000'  # Add your React app's origin
 # ]
 
-CORS_ALLOWED_ORIGINS = BACKEND_CORS_ALLOWED_ORIGINS.split(' ')
+# CORS_ALLOWED_ORIGINS = BACKEND_CORS_ALLOWED_ORIGINS.split(' ')
 
-CORS_ALLOW_CREDENTIALS = True  # If your requests include credentials (e.g., cookies)
-# CORS_ALLOW_ALL_ORIGINS = True  #not for production level (only for development time)
+CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "http://127.0.0.1:8000", 
+                        "https://django-backend-fsu.onrender.com",
+                        "https://overshot.onrender.com",
+                        "https://overshot.in.net",
+                        "https://www.overshot.in.net"]
+
+
+CORS_ALLOW_CREDENTIALS = False  # as we are not using cookies or any sort of creds
+
+CORS_ALLOW_HEADERS = [
+    'Authorization',
+    'content-type',
+    'accept',
+    'origin',
+    'x-requested-with',
+    # Add other custom headers if needed
+]
+
 
 SOCIALACCOUNT_LOGIN_ON_GET = True
