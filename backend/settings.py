@@ -1,5 +1,6 @@
 #for render postgresql database
-import dj_database_url
+
+# import dj_database_url
 
 
 from pathlib import Path
@@ -9,23 +10,29 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
-# importing module to load env file from django backend folder
+# uploading env variables here for Digital Ocean/ local developmenet time
 import os
-# from dotenv import load_dotenv
-# load_dotenv()  #will load env variables
+from dotenv import load_dotenv
+load_dotenv()  #will load env variables
+
+GOOGLE_CLIENT_ID = os.getenv('GOOGLE_CLIENT_ID')
+GOOGLE_CLIENT_SECRET = os.getenv('GOOGLE_CLIENT_SECRET')
+DJANGO_SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
+DEBUG_STATUS = os.getenv('DEBUG_STATUS')
+BACKEND_ALLOWED_HOSTS = os.getenv('BACKEND_ALLOWED_HOSTS')
+POSTGRESQL_URL = os.getenv('INTERNAL_POSTGRESQL_PATH')
+BACKEND_CORS_ALLOWED_ORIGINS = os.getenv('CORS_ALLOWED_ORIGINS')
 
 
-
-
-# uploading env variables using os.environ instead of os.getenv
-
-GOOGLE_CLIENT_ID = os.environ.get('GOOGLE_CLIENT_ID')
-GOOGLE_CLIENT_SECRET = os.environ.get('GOOGLE_CLIENT_SECRET')
-DJANGO_SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
-DEBUG_STATUS = os.environ.get('DEBUG_STATUS')
-BACKEND_ALLOWED_HOSTS = os.environ.get('BACKEND_ALLOWED_HOSTS')
-POSTGRESQL_URL = os.environ.get('INTERNAL_POSTGRESQL_PATH')
-BACKEND_CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS')
+# uploading env variables using os.environ instead of os.getenv for RENDER
+# import os
+# GOOGLE_CLIENT_ID = os.environ.get('GOOGLE_CLIENT_ID')
+# GOOGLE_CLIENT_SECRET = os.environ.get('GOOGLE_CLIENT_SECRET')
+# DJANGO_SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+# DEBUG_STATUS = os.environ.get('DEBUG_STATUS')
+# BACKEND_ALLOWED_HOSTS = os.environ.get('BACKEND_ALLOWED_HOSTS')
+# POSTGRESQL_URL = os.environ.get('INTERNAL_POSTGRESQL_PATH')
+# BACKEND_CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = DJANGO_SECRET_KEY
@@ -36,7 +43,7 @@ DEBUG = DEBUG_STATUS.lower() == 'true'
 # ALLOWED_HOSTS = ['localhost','127.0.0.1']
 # ALLOWED_HOSTS = BACKEND_ALLOWED_HOSTS.split(' ')
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "django-backend-fsu", 
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "django-backend-fsu", "143.198.22.140", # digital ocean ip
                  "django-backend-fsu.onrender.com",  
                  "overshot",  "overshot.onrender.com", "overshot.in.net", 
                  "www.overshot.in.net"]
@@ -209,8 +216,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-
-
 # Below are the settings made by me
 
 AUTHENTICATION_BACKENDS = (
@@ -251,7 +256,9 @@ CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "http://127.0.0.1:8000",
                         "https://django-backend-fsu.onrender.com",
                         "https://overshot.onrender.com",
                         "https://overshot.in.net",
-                        "https://www.overshot.in.net"]
+                        "https://www.overshot.in.net",
+                        "https://143.198.22.140", # digital ocean ip address
+                        "http://143.198.22.140"]   
 
 
 CORS_ALLOW_CREDENTIALS = False  # as we are not using cookies or any sort of creds
