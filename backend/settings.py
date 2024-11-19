@@ -147,12 +147,10 @@ DATABASES = {
     }
 }
 
-# Replace the SQLite DATABASES configuration with PostgreSQL:
-# DATABASES['default'] = dj_database_url.parse(POSTGRESQL_URL)
-
-DATABASES = {
-    'default': dj_database_url.parse(POSTGRESQL_URL, conn_max_age=600)
-}
+# below database is for render
+# DATABASES = {
+#     'default': dj_database_url.parse(POSTGRESQL_URL, conn_max_age=600)
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -188,18 +186,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
-# for render deploy
-if not DEBUG:
-    # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
+
+# for deploy on both Render and Digital Ocean
+if not DEBUG: #when debug is set to false
+
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-    # Enable the WhiteNoise storage backend, which compresses static files to reduce disk use
-    # and renames the files with unique names for each version to support long-term caching
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
+    # to compress any sort of uploads by user on the website
+
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
