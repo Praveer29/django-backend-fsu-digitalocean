@@ -8,8 +8,6 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-
-
 # uploading env variables here for Digital Ocean/ local developmenet time
 import os
 from dotenv import load_dotenv
@@ -43,10 +41,11 @@ DEBUG = DEBUG_STATUS.lower() == 'true'
 # ALLOWED_HOSTS = ['localhost','127.0.0.1']
 # ALLOWED_HOSTS = BACKEND_ALLOWED_HOSTS.split(' ')
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "django-backend-fsu", "143.198.22.140", # digital ocean ip
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "django-backend-fsu", "157.245.111.40", # digital ocean ip
                  "django-backend-fsu.onrender.com",  
-                 "overshot",  "overshot.onrender.com", "overshot.in.net", 
-                 "www.overshot.in.net"]
+                 "overshot",  "overshot.onrender.com", "overshot.in.net"
+                 "www.overshot.in.net", "fsu","fsu.in.net", "www.fsu.in.net"]
+
 
 SITE_ID = 3   #ALWAYS CHECK FOR CURRENT SITE ID on DJANGO ADMIN INTEFACE WHILE CLICKING ON THE SITE IN URL
 
@@ -194,18 +193,22 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # for deploy on both Render and Digital Ocean
-if not DEBUG: #when debug is set to false
+# if not DEBUG: #when debug is set to false
 
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-    # to compress any sort of uploads by user on the website
+#     # to compress any sort of uploads by user on the website
 
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#     MEDIA_URL = '/media/'
+#     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 
@@ -257,8 +260,10 @@ CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "http://127.0.0.1:8000",
                         "https://overshot.onrender.com",
                         "https://overshot.in.net",
                         "https://www.overshot.in.net",
-                        "https://143.198.22.140", # digital ocean ip address
-                        "http://143.198.22.140"]   
+                        "https://157.245.111.40", # digital ocean ip address
+                        "http://157.245.111.40",
+                        "https://fsu.in.net", # custom domain for backend
+                        "https://www.fsu.in.net"]   
 
 
 CORS_ALLOW_CREDENTIALS = False  # as we are not using cookies or any sort of creds
