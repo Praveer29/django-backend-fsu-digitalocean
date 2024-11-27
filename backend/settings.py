@@ -41,7 +41,7 @@ DEBUG = DEBUG_STATUS.lower() == 'true'
 # ALLOWED_HOSTS = ['localhost','127.0.0.1']
 # ALLOWED_HOSTS = BACKEND_ALLOWED_HOSTS.split(' ')
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "django-backend-fsu", "157.245.111.40", # digital ocean ip
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "django-backend-fsu", "206.189.141.73", # digital ocean ip
                  "django-backend-fsu.onrender.com",  
                  "overshot",  "overshot.onrender.com", "overshot.in.net"
                  "www.overshot.in.net", "fsu","fsu.in.net", "www.fsu.in.net"]
@@ -260,16 +260,18 @@ CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "http://127.0.0.1:8000",
                         "https://overshot.onrender.com",
                         "https://overshot.in.net",
                         "https://www.overshot.in.net",
-                        "https://157.245.111.40", # digital ocean ip address
-                        "http://157.245.111.40",
+                        "https://206.189.141.73", # digital ocean ip address
+                        "http://206.189.141.73",
                         "https://fsu.in.net", # custom domain for backend
                         "https://www.fsu.in.net"]   
 
 
 CORS_ALLOW_CREDENTIALS = False  # as we are not using cookies or any sort of creds
-
+CORS_ALLOW_METHODS = [
+    'DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT',
+]
 CORS_ALLOW_HEADERS = [
-    'Authorization',
+    'authorization',
     'content-type',
     'accept',
     'origin',
